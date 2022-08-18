@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title class="bg-warning text-weight-strong">sandeep lakkireddy</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'portfolio1/style1.css' %}">
+        <style>
+          ::-webkit-scrollbar{
+                  width: 7px;
+                }
+
+                /* Track */
+                ::-webkit-scrollbar-track {
+                  box-shadow: inset 0 0 5px white;
+                  border-radius: 5px;
+                }
+
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                  background: grey;
+                  border-radius: 5px;
+                }
+
+                /* Handle on hover */
+                ::-webkit-scrollbar-thumb:hover {
+                  background: #b30000;
+                }
+                .img_section5 img{
+                    filter: blur(2px);
+                    transition: .3s ease-in-out;
+                }
+                 .img_section5:hover img{
+                          filter: blur(0);
+                }
+
+        </style>
+    </head>
+    <body  data-spy="scroll" data-target="navbar" data-offset="1">
+            <div class="preload ">
+                <img class="airplane" src="{% static 'portfolio1/cplane1.png' %}" alt="airplane">
+                <h3 class="text-dark">Landing on website ...</h3>
+                <img class="cloud1" src="{% static 'portfolio1/ccloud.png' %}" alt="cloud1">
+                <img class="cloud2" src="{% static 'portfolio1/ccloud.png' %}" alt="cloud2">
+                <img class="cloud3" src="{% static 'portfolio1/ccloud.png' %}" alt="cloud3">
+            </div>
+            <header>
+                <nav class="navbar  fixed-top navbar-expand-md bg-warning pt-2 mb-0" id="mNavbar">
+                    <div class="container-fluid">
+                        <a href="{% url 'home' %}" class="navbar-brand text-dark font-weight-normal">Portfolio</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><ion-icon name="list-outline"></ion-icon></span>
+                        </button>
+                        <div class=" smooth-scroll collapse navbar-collapse" id="navbarCollapse">
+                            <div class="  navbar-nav">
+                                <a href="#" class="nav-item nav-link dropdown-toggle active text-dark font-weight-normal" data-toggle="dropdown">Projects</a>
+                                <div class=" smooth-scroll dropdown-menu bg-warning">
+                                    <a class="dropdown-item" href="#section21">AI-Learns-To-Play</a>
+                                    <a class="dropdown-item" href="#section22">Edge-Detection</a>
+                                    <a class="dropdown-item" href="#section23">Django-website</a>
+                                </div>
+
+                                <a href="#section3" class="nav-item nav-link active text-dark font-weight-normal">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid p-0 mb-0 pt-5">
+                    <div class="jumbotron bg-dark text-white">
+                        <h1 class="display-4 text-center fstyle1">Sandeep Lakkireddy</h1>
+                        <p class="lead pt-3 text-center font-weight-light">Electronics Engineer</p>
+                        <h3 class="lead text-center px-2 font-weight-light display-7 mx-5 px-5 my-4">Welcome to my digital Portfolio. This is where is showcase cool stuff that I have enjoyed working on recently </h3>
+
+                        <div id="section1" class="row pl-5">
+                                <div class="container-fluid">
+                                    <p class="text-center"><a href="https://twitter.com/SandeepLakkire1" target="_blank"><button style="font-size:24px" class="btn rounded-circle  btn-outline-primary border-dark mr-1"><ion-icon name="logo-twitter"></ion-icon></button></a>
+                                        <a href="https://github.com/SandeepReddy1600?tab=repositories" target="_blank"><button style="font-size:24px" class="btn rounded-circle  btn-outline-light border-dark ml-3"><ion-icon name="logo-github"></ion-icon></button></a>
+                                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sandeeplakkireddy8@gmail.com&su=&shva=1" target="_blank"><button style='font-size:24px' class="btn rounded-circle  btn-outline-danger border-dark ml-3"><ion-icon name="mail-outline"></ion-icon></button></a>
+                                        <a href="https://www.linkedin.com/in/sandeep-lakkireddy-33a3331a6/" target="_blank"><button style='font-size:24px' class="btn rounded-circle  btn-outline-info border-dark ml-3"><ion-icon name="logo-linkedin"></ion-icon></button></a></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="container-fluid p-0">
+                    <div class="jumbotron pl-4 pt-0 bg-white">
+                        <h2 class="font-weight-normal text-dark fstyle1 ">Technical Skills</h2>
+                        <h3 class="font-weight-strong text-muted ml-3 my-3 pl-3">Languages</h3>
+                        <div class="row mt-2 ml-2 pl-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon> Python</h5></div>
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon><abbr class="" title="structured query language ">SQL</abbr></h5></div>
+                        </div>
+                        <div class="row mt-3 ml-2 pl-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon><abbr title="Hyper Text Markup Language">HTML</abbr>/<abbr title="Cascading Style Sheets ">CSS</abbr></h5></div>
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon> C++</h5></div>
+                        </div>
+                        <h3 class="font-weight-strong text-muted ml-3 my-3 pl-3">Tools, Frameworks</h3>
+                        <div class="row mt-3 ml-2 pl-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon> Django</h5></div>
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon> GIT and GITHUB</h5></div>
+                        </div>
+                        <div class="row mt-3 ml-2 pl-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon> <abbr title="Computer Vision">OpenCV</abbr></h5></div>
+                            <div class="col-md-6 col-lg-4 col-xl-3"><h5 class="text-muted font-weight-medium"><ion-icon class="ml-5 text-dark"name="radio-button-on-outline"></ion-icon> BootStrap CSS</h5></div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="text-align:center" width="85%">
+                <div id="section21" class="container-fluid mb-5 pb-5 p-0">
+                    <div class="jumbotron pl-4 pt-2 pb-0 bg-white">
+                        <h2 class="font-weight-normal text-dark ml-1 fstyle1">Projects</h2>
+                        <h3 class="font-weight-strong text-body ml-1 mt-5 mb-3 pl-3 fstyle2">AI-learns-to-play-flappybird</h3>
+                        <div  class="row mt-3  pr-0">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mx-4"><p class="text-muted font-weight-normal lead">This project is built using
+                                pygame which is a module present in python and the brain to this is provided using NEAT(Neuroevolution of augmenting topologies).
+                                After an hour of training the model almost got perfect and hit a high score of 200. You can take a peek at the code in my github account</p>
+                                <div>
+                                    <a href="https://github.com/SandeepReddy1600/AI-Learns-To-Play" target="_blank" class="btn btn-warning m-3" role="button">View on github <ion-icon name="logo-github"></ion-icon></a>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-2 col-xl-3 mx-4  img_section5"><a href="{% static 'portfolio1/flappy5.png' %}" target="_blank"><img src="{% static 'portfolio1/flappy5.png' %}" class="img-fluid"></a></div>
+                            <div class="col-md-5 col-lg-2 col-xl-3 ml-2  p-1 img_section5"><a href="{% static 'portfolio1/flappy.png' %}" target="_blank"><img src="{% static 'portfolio1/flappy.png' %}" class=" img-fluid"></a></div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+                <hr style="text-align:center" width="85%">
+
+
+                <div id="section22" class="container-fluid mt-5 p-0 py-4">
+                    <div class="jumbotron pl-4 pt-2 pb-0 bg-white">
+                        <div><h3 class="font-weight-strong text-body text-xs-sm-center text-xl-right pr-5 mb-3 mr-5 fstyle2">Edge-Detection-gradient-OpenCV</h3></div>
+                        <div class="row mt-3 pt-4  px-0">
+                            <div class="col-md-5 col-lg-2 col-xl-3 mx-4  p-1 img_section5"><a href="{% static 'portfolio1/Edge Detect 1.png' %}" target="_blank"><img src="{% static 'portfolio1/Edge Detect 1.png' %}" class=" img-fluid"></a></div>
+                            <div class="col-md-5 col-lg-2 col-xl-3 ml-4  p-1 img_section5"><a href="{% static 'portfolio1/Edge Detect 2.png' %}" target="_blank"><img src="{% static 'portfolio1/Edge Detect 2.png' %}" class=" img-fluid"></a></div>
+                            <div class="col-md-6 col-lg-4 col-xl-4 ml-5 ">
+                                <p class="text-muted font-weight-normal lead">This is project is used to detect edges in a video input especially
+                                    during night time where a normal camera can't see objects in dark environment it's a kind of alternative for a infrared camera</p>
+                                <div>
+                                    <a href="https://github.com/SandeepReddy1600/Edge-Detection-Opencv" class="btn btn-warning m-3" role="button">View on github <ion-icon name="logo-github"></ion-icon></a>
+                                </div>
+                            </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <hr style="text-align:center" width="85%">
+                <div class="container-fluid mb-5 py-4 p-0">
+                    <div class="jumbotron pl-4 pt-2 pb-0 bg-white">
+                        <h3 class="font-weight-strong text-body  ml-1 mt-5 mb-3 pl-3 fstyle2">Web-Application-Using-Django-Framework</h3>
+                        <div id="section23" class="row mt-3  pr-0">
+                            <div class="col-md-6 col-lg-4 col-xl-3 mx-4"><p class="text-muted font-weight-normal lead">This is a small web application(blog) which is built on Django framework.While building this web app I got a good sense of how all the web site's backend works.
+                                The famous instagram app and spotify are build on this framework </p>
+                                <div>
+                                    <a href="http://172.105.51.31/blog" target="_blank" class="btn btn-warning m-3" role="button">Visit Website </a>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-2 col-xl-4 ml-4  img_section5"><a href="{% static 'portfolio1/django2.png' %}" target="_blank"><img src="{% static 'portfolio1/django2.png' %}" class=" img-fluid"></a></div>
+                            <div class="col-md-5 col-lg-2 col-xl-4 img_section5"><a href="{% static 'portfolio1/django4.png' %}" target="_blank"><img src="{% static 'portfolio1/django4.png' %}" class=" img-fluid"></a></div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+                <hr style="text-align:center" width="85%">
+
+                <div class="container-fluid p-0">
+                    <div class="jumbotron pl-4 pt-0 bg-white">
+                         <h2  class="font-weight-normal text-dark py-3 fstyle1">More projects (relatively small) ...</h2>
+                        <div class="row  my-3 pt-3">
+                            <div class="col-md-5 col-lg-4 col-xl-3 m-2">
+                                <div class="card bg-dark text-white" style="width: 18rem;">
+                                      <div class="card-body">
+                                        <h3 class="card-title font-weight-bold fstyle2">Face Detection OpenCV</h3>
+                                        <p class=" font-weight-lighter">By using face-cascades , human faces can be detected in real time or in a photo graph. We can customize this by training a model which will result in a XML file which can be later used in our program</p>
+                                        <a href="https://github.com/SandeepReddy1600/Face-Detect-OpenCV" target="_blank" class="btn btn-outline-danger m-3 text-white" role="button">View code  <ion-icon name="code-slash-outline"></ion-icon></a>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-4 col-xl-3 m-2">
+                                <div class="card" style="width: 18rem;">
+                                      <div class="card-body bg-dark text-white">
+                                        <h4 class="card-title font-weight-bold fstyle2">Whatsapp Automation Selenium</h4>
+                                        <p class="card-text">By using selenium web-driver in python messages/documents are sent through the command prompt. This project is a good example to demonstrate html tags</p>
+                                        <a href="https://github.com/SandeepReddy1600/whatsapp-automation-using-python" target="_blank" class="btn btn-outline-danger m-3 text-white" role="button">View code  <ion-icon name="code-slash-outline"></ion-icon></a>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-4 col-xl-3 m-2">
+                                <div class="card" style="width: 18rem;">
+                                      <div class="card-body bg-dark text-white">
+                                        <h2 class="card-title font-weight-bold fstyle2">Sudoku solver</h2>
+                                        <p class="card-text">This program basically solves any type of sudoku. This project is a good exercise to implement backtracking algorithm. If interested code will be in my github account.</p>
+                                        <a href="https://github.com/SandeepReddy1600/Sudoku-solver-using-python" target="_blank" class="btn btn-outline-danger m-3 text-white" role="button">View code  <ion-icon name="code-slash-outline"></ion-icon></a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script src="{% static 'portfolio1/app.js' %}"></script>
+<!--        <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+
+    </body>
+
+<footer class="bg-light">
+      <div id="section3" class="container-fluid bg-light p-0 m-0">
+                <div class="jumbotron px-0 pt-2 bg-light text-center">
+                    <h2 class="ml-2 mt-5 font-weight-bolder font-family:Roboto;">Let's Build Something Together</h2>
+                    <h5 class="ml-3 mt-3">Feel free to reach out if you have a question, or just want to connect.</h5>
+                     <div class="container-fluid text-center px-0">
+                        <h3 class="ml-5 mt-5"><a href="https://www.linkedin.com/in/sandeep-lakkireddy-33a3331a6/" target="_blank" class="px-2 text-dark"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sandeeplakkireddy8@gmail.com&su=&shva=1" target="_blank" class="px-2 text-dark"><ion-icon name="mail-outline"></ion-icon></a><a href="https://twitter.com/SandeepLakkire1" target="_blank" class="px-2 text-dark"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="https://github.com/SandeepReddy1600?tab=repositories"target="_blank" class="px-2 text-dark"><ion-icon name="logo-github"></ion-icon></a></h3>
+                    </div>
+                </div>
+      </div>
+
+        <div class="font-weight-light text-muted text-center space p-0 m-0"><p class="space">Built using <a href="https://www.djangoproject.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight=" " font-size="none" text-anchor=" " style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#1abc9c"></path><g fill="#ffffff"><path d="M78.83333,21.5v36.96712c-2.48683,-1.0105 -7.85355,-1.13379 -10.49805,-1.13379c-19.89467,0 -38.31087,9.35967 -38.31087,35.83333c0,31.67667 24.94392,35.83333 41.64225,35.83333c6.59333,0 21.5,-0.65116 28.66667,-2.72949v-104.77051zM114.66667,21.5v21.5h21.5v-21.5zM114.66667,57.33333v62.3584c0,10.86467 -6.60767,22.17367 -21.5,28.66667l20.49219,9.28027c20.82633,-7.16667 22.50781,-30.78027 22.50781,-37.94694v-62.3584zM71.45671,75.61393c2.29333,0 4.86829,0.42048 7.37663,0.99382v33.70573c-2.50833,0.57333 -5.0833,1.00781 -7.37663,1.00781c-9.38833,0 -18.49056,-2.96129 -18.49056,-18.15462c0,-15.19333 9.10223,-17.55274 18.49056,-17.55274z"></path></g></g></g></svg></a> and hosted on
+                <a  href="https://www.linode.com/" target="_blank"><i class="fa fa-linode" style='font-size:24px' aria-hidden="true"></i></a></p></div>
+        <div class="font-weight-light  text-muted text-center mb-2  fstyle3">© 2021 — Sandeep lakkireddy</div>
+    </footer>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</html>

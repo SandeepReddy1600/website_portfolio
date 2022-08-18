@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Poppins:wght@500&family=Questrial&family=Roboto:wght@300&display=swap');
+.fstyle1 {
+    font-family:"Questrial";
+}
+.fstyle2{
+    font-family:"Changa";
+}
+.fstyle3{
+    font-family:"Poppins";
+}
+  .preload{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background: #77b3d4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+      z-index:99;
+  }
+  .cloud1, .cloud2, .cloud3{
+  height: 80px;
+  position: absolute;
+  right: 0%;
+  z-index:-1;
+  }
+  .cloud1{
+  top: 25%;
+  transform: translate(100%, -25%);
+  animation: clouds 3s ease infinite;
+  
+  }
+  .cloud2{
+  top: 40%;
+  transform: translate(100%, -40%);
+  animation: clouds 3s ease infinite 2s;
+  
+  }
+  .cloud3{
+  top: 75%;
+  transform: translate(100%, -75%);
+  animation: clouds 3s ease infinite 1.5s;
+  }
+  
+  .airplane{
+  background: #77b3d4;
+  height:100px;
+  animation: airplane 1s ease infinite alternate;
+  }
+  .preload h3{
+  position: absolute;
+  top: 75%;
+  transform: translateY(-75%);
+  color: white;
+  font-size: 30px;
+  font-family: Changa;
+  }
+
+.preload.hidden{
+animation: fadeOut 1s;
+animation-fill-mode: forwards;
+}
+  
+  @keyframes fadeOut{
+	100%{
+	  opacity: 0;
+	  visibility: hidden;
+}
+}
+  
+  
+  @keyframes airplane{
+  from{
+  transform: translateY(0px);
+  }
+  to{
+  transform: translateY(50px);
+  }
+  }
+  @keyframes clouds{
+  from{
+  right: 0%;
+  }
+  to{
+  right: 130%;
+  }
+  }
+
+@media screen and (max-width:600px){
+.airplane{
+height: 60px;
+}
+ .cloud1, .cloud2, .cloud3{
+height: 30px;
+}
+.cloud3{
+  top: 60%;
+  transform: translate(100%, -60%);
+  animation: clouds 3s ease infinite 1.5s;
+  }
+.cloud1{
+  top: 30%;
+  transform: translate(100%, -30%);
+  animation: clouds 3s ease infinite;
+  }
+img{
+height: 10px;
+}
+
+
+}
+
+abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+  }
